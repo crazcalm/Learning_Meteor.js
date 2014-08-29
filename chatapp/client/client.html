@@ -5,6 +5,7 @@
 <body>
   <h1>Chatapp</h1>
   {{> welcome}}
+  {{> input}}
   {{> messages}}
 </body>
 
@@ -18,6 +19,10 @@
   {{#each messages}}
     <strong>{{name}}:</strong> {{message}}<br>
   {{/each}}
+</template>
+
+<template name="input">
+  <p>Message: <input type="text" id="message"></p>
 </template>
 
 <!--
